@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics>
+  <Topic id="a3ec6864-51b0-4fdb-b39b-694f19816ab0" visible="True" isDefault="true" isSelected="true" apiParentMode="InsertAfter" title="Core API" tocTitle="Table of Contents">
+    <HelpKeywords>
+      <HelpKeyword index="K" term="Welcome" />
+    </HelpKeywords>
+  </Topic>
+  <Topic id="5c83e442-984e-471d-9bb6-6a22539f27ca" visible="True" isExpanded="true" title="Version History">
+    <HelpKeywords>
+      <HelpKeyword index="K" term="version, history" />
+    </HelpKeywords>
+    <Topic id="05eae0b0-dc16-45c2-abcb-7e84f5f7508d" visible="True" title="Version 1.0.0.0">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="version, 1.0.0.0" />
+      </HelpKeywords>
+    </Topic>
+  </Topic>
+</Topics>

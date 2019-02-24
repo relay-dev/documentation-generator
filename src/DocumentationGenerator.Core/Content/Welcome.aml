@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="a3ec6864-51b0-4fdb-b39b-694f19816ab0" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+      <mediaLink>
+        <image xlink:href="media\core-icon.png" placement="near" />
+      </mediaLink>
+			<para>Welcome to the documentation of Core API. You can view the source code at https://github.com/relay-dev/core.
+    </para>
+		</introduction>
+
+		<section>
+			<title>Getting Started</title>
+			<content>
+				<para>Please reference the left-hand pane for the table of contents:</para>
+
+				<list class="bullet">
+					<listItem>
+						<para>
+              The Table of Contents is laid out to match the namespace schema of the source code it documents
+            </para>
+					</listItem>
+
+					<listItem>
+						<para>Beneath each namespace is a list of types</para>
+					</listItem>
+
+					<listItem>
+						<para>Drill into a type to see more details about its Properties and Methods</para>
+					</listItem>
+				</list>
+
+				<para>Please send questions or comments to relay-technologies-dev@gmail.com</para>
+			</content>
+		</section>
+
+		<relatedTopics>
+			<link xlink:href="5c83e442-984e-471d-9bb6-6a22539f27ca" />
+		</relatedTopics>
+	</developerConceptualDocument>
+</topic>
