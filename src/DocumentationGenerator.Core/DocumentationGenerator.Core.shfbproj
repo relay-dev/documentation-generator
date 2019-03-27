@@ -14,8 +14,8 @@
     <Name>DocumentationGenerator.Core</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
-    <OutputPath>.\Help\</OutputPath>
-    <HtmlHelpName>DocumentationGenerator.Core</HtmlHelpName>
+    <OutputPath>Help\</OutputPath>
+    <HtmlHelpName>Core API Documentation</HtmlHelpName>
     <Language>en-US</Language>
     <TransformComponentArguments>
       <Argument Key="logoFile" Value="Help.png" xmlns="" />
@@ -27,8 +27,52 @@
       <Argument Key="maxVersionParts" Value="" xmlns="" />
     </TransformComponentArguments>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\..\..\..\..\Users\Scott\.nuget\packages\relay.core\1.0.7\lib\netcoreapp2.2\Core.dll" />
+      <DocumentationSource sourceFile="..\..\resources\Core\comments.xml" />
+      <DocumentationSource sourceFile="..\..\resources\Core\Core.dll" />
     </DocumentationSources>
+    <HelpTitle>Core API Documentation</HelpTitle>
+    <HelpFileVersion>1.0.0.0</HelpFileVersion>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
+    <NamespaceGrouping>False</NamespaceGrouping>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <Preliminary>False</Preliminary>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, TypeParameter, AutoDocumentDispose</MissingTags>
+    <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
+    <ComponentConfigurations>
+      <ComponentConfig id="Code Block Component" enabled="True" xmlns="">
+        <component id="Code Block Component">
+  <basePath value="{@HtmlEncProjectFolder}" />
+  <outputPaths>{@HelpFormatOutputPaths}</outputPaths>
+  <allowMissingSource value="false" />
+  <removeRegionMarkers value="false" />
+  <colorizer syntaxFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xml" styleFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xsl" stylesheet="{@SHFBFolder}PresentationStyles\Colorizer\highlight.css" scriptFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.js" disabled="{@DisableCodeBlockComponent}" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
+</component>
+      </ComponentConfig>
+    </ComponentConfigurations>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="(global)" isDocumented="False" />
+<NamespaceSummaryItem name="Core.Application" isDocumented="True">&lt;h3&gt;Application infrastructure and support abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Caching" isDocumented="True">&lt;h3&gt;Caching abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Configuration" isDocumented="True">&lt;h3&gt;Configuration abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Data" isDocumented="True">&lt;h3&gt;Data access abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Data.Entity" isDocumented="True">&lt;h3&gt;Data access abstractions inteded to be used by domain entities&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Exceptions" isDocumented="True">&lt;h3&gt;Exceptions used throuhgout the Core framework&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Framework" isDocumented="True">&lt;h3&gt;Framework abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Framework.Attributes" isDocumented="True">&lt;h3&gt;Attribtues inteded to be used by consumers to communicate with the framework&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Framework.Descriptor" isDocumented="True">&lt;h3&gt;Abstractions that describe common aspects of platform types&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Framework.Enums" isDocumented="True">&lt;h3&gt;Abstractions that describe common aspects of platform enums&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Framework.Plugins" isDocumented="True">&lt;h3&gt;Plugin infrastructure for the Core framework&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Framework.Services" isDocumented="True">&lt;h3&gt;Service infrastructure abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.IO" isDocumented="True">&lt;h3&gt;File I/O abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.IoC" isDocumented="True">&lt;h3&gt;Inversion of Control abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.IoC.Plugins" isDocumented="True">&lt;h3&gt;Plugin infrastructure for IoC containers&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Logging" isDocumented="True">&lt;h3&gt;Logging abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Mapping" isDocumented="True">&lt;h3&gt;Object mapping abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Providers" isDocumented="True">&lt;h3&gt;Abstractions for types which provide consumers with functionality intended to deliver data to operations that would otherwise be out of scope&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Security" isDocumented="True">&lt;h3&gt;Security abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Utilities" isDocumented="True">&lt;h3&gt;Utility abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Core.Validation" isDocumented="True">&lt;h3&gt;Validation abstractions&lt;/h3&gt;&lt;br /&gt;&lt;br /&gt;</NamespaceSummaryItem></NamespaceSummaries>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
@@ -53,6 +97,7 @@
     <Folder Include="Content\VersionHistory" />
     <Folder Include="icons" />
     <Folder Include="media" />
+    <Folder Include="styles" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\VersionHistory\v1.0.0.0.aml" />
@@ -64,11 +109,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons\Help.png" />
+    <Content Include="styles\branding-en-US.css" />
+    <Content Include="styles\branding-Help1.css" />
+    <Content Include="styles\branding-HelpViewer.css" />
+    <Content Include="styles\branding-Website.css" />
+    <Content Include="styles\branding.css" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="media\core-icon.png">
-      <ImageId>core-icon</ImageId>
-      <AlternateText>core-icon</AlternateText>
+    <Image Include="media\icon.png">
+      <ImageId>icon</ImageId>
+      <AlternateText>icon</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
